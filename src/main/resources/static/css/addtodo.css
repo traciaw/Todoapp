@@ -1,0 +1,9 @@
+.input-group-append {
+    cursor: pointer;
+  }
+
+  #newToDo{
+    align-items: center;
+    padding: 20px;
+
+}

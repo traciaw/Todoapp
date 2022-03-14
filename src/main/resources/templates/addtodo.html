@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/addtodo.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+  <link rel="stylesheet" href="css/base.css">
+  <title>addtodo</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Navbar -->
+  <header>
+      <div th:insert="fragments/navbar.html :: navbar"></div>
+  </header>
+
+  <!-- Main Body -->
+  <main>
+    <span class="border">
+        <!--Start of form-->
+    <div class="container col-8 shadow-lg bg-light" id="newItemForm">
+  
+      <!--start of changes-->
+      <div class="col">       
+        <h4 class="mb-3">New ToDo</h4>
+        <form id="newToDo" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="headerInput" class="form-label">Header</label>
+                <input type="text" class="form-control" id="headerInput" placeholder="ToDo Title">
+            </div>
+            <div class="mb-3">
+                <label for="descriptionInput" class="form-label">Description</label>
+                <input type="text" class="form-control" id="descriptionInput"
+                       placeholder="Description">
+            </div>
+            <div class="mb-3">
+                <label for="dueInput" class="form-label">Due Date</label>
+                <input type="text" class="form-control" id="dueInput"
+                       placeholder="DD/MM/YYYY">
+            </div>
+            <p>
+                <button type="submit" class="btn btn-secondary btn">Submit!!</button>
+            </p>
+            
+              
+        </form>
+        </div>
+    </div>
+    </span>
+
+  </main>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/productController.js"></script>
+  <script src="js/addtodo.js"></script>
+</body>
+
+</html>
+
